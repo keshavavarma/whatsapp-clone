@@ -3,6 +3,7 @@ import {Image, Text, View, StyleSheet} from 'react-native';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
+
 const ChatListItem = ({chat}: any) => {
   return (
     <View style={styles.container}>
