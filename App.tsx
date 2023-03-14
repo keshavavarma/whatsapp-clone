@@ -1,13 +1,13 @@
 import {StyleSheet, SafeAreaView} from 'react-native';
 import React from 'react';
+import Navigator from './src/navigation';
 import ChatListScreen from './src/screens/ChatListScreen';
 import ChatScreen from './src/screens/ChatScreen';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <ChatListScreen /> */}
-      <ChatScreen />
+      <Navigator />
     </SafeAreaView>
   );
 }
