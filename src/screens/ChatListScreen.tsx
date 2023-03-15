@@ -9,8 +9,13 @@ export default function ChatListScreen() {
       data={chats}
       renderItem={({item}) => <ChatListItem chat={item} />}
       keyExtractor={item => item.id}
+      style={styles.bg}
     />
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  bg: {
+    backgroundColor: 'white',
+  },
+});

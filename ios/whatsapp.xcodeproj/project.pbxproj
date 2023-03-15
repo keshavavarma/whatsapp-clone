@@ -39,6 +39,8 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-whatsapp-whatsappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whatsapp-whatsappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2561D77B29C0F7D700A6B957 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		2561D78929C0F7D800A6B957 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		2561D79B29C1988200A6B957 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		2561D79C29C1A37600A6B957 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-whatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsapp.debug.xcconfig"; path = "Target Support Files/Pods-whatsapp/Pods-whatsapp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-whatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsapp.release.xcconfig"; path = "Target Support Files/Pods-whatsapp/Pods-whatsapp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-whatsapp-whatsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsapp-whatsappTests.debug.xcconfig"; path = "Target Support Files/Pods-whatsapp-whatsappTests/Pods-whatsapp-whatsappTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,8 @@
 		2561D77A29C0F73900A6B957 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2561D79C29C1A37600A6B957 /* Entypo.ttf */,
+				2561D79B29C1988200A6B957 /* Ionicons.ttf */,
 				2561D77B29C0F7D700A6B957 /* AntDesign.ttf */,
 				2561D78929C0F7D800A6B957 /* MaterialIcons.ttf */,
 			);
