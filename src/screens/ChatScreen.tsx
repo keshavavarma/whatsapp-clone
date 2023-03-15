@@ -8,6 +8,7 @@ import {
   Platform,
 } from 'react-native';
 import {useRoute, useNavigation} from '@react-navigation/native';
+import {useHeaderHeight} from '@react-navigation/elements';
 import bgImage from '../../assets/images/BG.png';
 import messages from '../../assets/data/messages.json';
 import Message from '../components/Message';
@@ -16,7 +17,7 @@ import InputBox from '../components/InputBox';
 export default function ChatScreen() {
   const route = useRoute();
   const navigation = useNavigation();
-
+  const height = useHeaderHeight();
   interface Params {
     id?: string;
     name?: string;
@@ -30,8 +31,8 @@ export default function ChatScreen() {
 
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-      keyboardVerticalOffset={Platform.OS === 'ios' ? 60 : 90}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      keyboardVerticalOffset={Platform.OS === 'ios' ? 60 : height + 90}
       style={styles.bg}>
       <ImageBackground source={bgImage} style={styles.bg}>
         <FlatList

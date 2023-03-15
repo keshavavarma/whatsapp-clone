@@ -37,19 +37,20 @@ export default function MainTabNavigator() {
       <Tab.Screen
         name="Chats"
         component={ChatListScreen}
-        options={{
+        options={({navigation}) => ({
           tabBarIcon: ({color, size}) => (
             <Ionicons name="ios-chatbubbles-sharp" color={color} size={size} />
           ),
           headerRight: () => (
             <Entypo
+              onPress={() => navigation.navigate('Contacts')}
               name="new-message"
               size={18}
               color={'royalblue'}
               style={{marginRight: 15}}
             />
           ),
-        }}
+        })}
       />
       <Tab.Screen
         name="Camera"

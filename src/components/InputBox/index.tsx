@@ -1,5 +1,5 @@
 import {StyleSheet, TextInput, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useState} from 'react';
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -7,6 +7,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default function InputBox() {
   const [newMessage, setNewMessage] = useState('');
+  const insets = useSafeAreaInsets();
 
   const onSend = () => {
     console.warn(newMessage);
@@ -14,7 +15,7 @@ export default function InputBox() {
   };
 
   return (
-    <SafeAreaView style={styles.container} edges={['bottom']}>
+    <View style={[styles.container, {paddingBottom: insets.bottom + 10}]}>
       <AntDesign name="plus" size={20} color="royalblue" />
       <TextInput
         placeholder="type your message..."
@@ -29,7 +30,7 @@ export default function InputBox() {
         style={styles.send}
         onPress={onSend}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
